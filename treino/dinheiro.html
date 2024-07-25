@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando criação de locel</title>
+</head>
+<body>
+    <h1>Bom dia</h1>
+    <p>Esse é um código que pega e coloca o valor digitado para a moeda Brasileira (BRL)</p>
+    <script>
+        var money = Number(window.prompt(`Qual o seu salário`))
+
+        document.write(`O seu salário é de ${money.toLocaleString('pt-BR',{style: 'currency', currency:'BRL'})}`)
+    </script>
+</body>
+</html>
