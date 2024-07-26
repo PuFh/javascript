@@ -21,8 +21,14 @@
     <h1>ablublub</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ea fuga maiores laborum quidem cum ratione nobis fugiat dignissimos doloremque sed, delectus impedit, odio saepe asperiores, odit possimus est repudiandae.</p>
     <script>
-        var nome = window.prompt('Qual é o seu nome?   '); //Tipo um label
-        window.alert("Bem vindo "+nome);
+        var n1 = window.prompt("Digite um número");//prompot naturalmente é um String
+        var n2 = window.prompt("Digite outro número");
+        var n1 = Number(n1);
+        var n2 = Number(n2);
+        var soma = n1 + n2;
+        window.alert(`A soma dos valores ${n1} e ${n2} é ${soma} `);
+        // + pode ser cocatenação(juntar variáveis)
+        // e o símbolo + tambem pode ser usado para adição
 </script>
 </body>
 </html>
