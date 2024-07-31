@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturalidade</title>
+</head>
+<body>
+    <h1>Seu País</h1>
+    <form action="arquivo.php" method="post">
+        País
+        <input type="text" name="ipais" id="ipais" placeholder="Digite o seu país">
+        <input type="button" value="Enviar" onclick="pais()">
+        <div id="saida">
+
+        </div>
+    </form>
+    <script>
+        function pais(){
+            var pais = window.document.querySelector('input#ipais')
+            var saida = window.document.querySelector('div#saida')
+
+
+            if (pais == 'Brasil'){
+                saida.innerHTML = `Você é Brasileiro`
+            }
+            saida.innerHTML = 'Você é gringo'
+
+            
+        }
+        </script>
+</body>
+</html>
