@@ -20,9 +20,9 @@ main > section#painel{
     display: block;
     background-color: whitesmoke;
 
-    width: 600px;
-    height: 400px;
+    width: 400px;
     margin: auto;
+    padding: 12px;
 
     box-shadow: 1px 5px 8px #0000007a;
     border-radius: 8px;
@@ -35,6 +35,9 @@ img{
 
     border-radius: 50%;
     
+}
+div{
+    text-align: center;
 }
 footer {
     display: block;
