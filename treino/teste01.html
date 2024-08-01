@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <h1>Teste com conversão de variaveis no input</h1>
+    <form action="receba.php">
+        <label for="number1txt">Digite um valor</label>
+        <input type="number" name="number1txt" id="number1txt" placeholder="Digite um valor">
+        <label for="">X</label>
+        <input type="number" name="number2txt" id="number2txt" placeholder="Digite ou númerp">
+        <input type="button" value="Enviar" onclick="calcular()">
+        <div id="saida"></div>
+    </form>
+    <script>
+        function calcular() {
+            var number1 = window.document.getElementById('number1txt')
+            var number1 = Number(number1.value)
+            var number2 = Number(window.document.querySelector('input#number2txt').value)
+            var soma = number1 * number2
+            var saida = window.document.querySelector('div#saida')
+            saida.innerHTML = `Você digitou o valor ${number1} e ${number2}. A multiplacação desses valores é igual a ${soma}`
+            
+        }
+    </script>
+</body>
+</html>

@@ -6,28 +6,29 @@
     <title>Naturalidade</title>
 </head>
 <body>
-    <h1>Seu País</h1>
-    <form action="arquivo.php" method="post">
-        País
-        <input type="text" name="ipais" id="ipais" placeholder="Digite o seu país">
-        <input type="button" value="Enviar" onclick="pais()">
-        <div id="saida">
-
-        </div>
+    <h1>País</h1>
+    <form action="receba.php">
+        <label for="pais">Pais de Nascença</label>
+        <input type="text" name="ipais" id="ipais">
+        <input type="button" value="Enviar" onclick="naturalidade()">
+        <div id="saida"></div>
     </form>
     <script>
-        function pais(){
-            var pais = window.document.querySelector('input#ipais')
+
+        function naturalidade() {
+            var pais = String(window.document.querySelector('input#ipais').value)
             var saida = window.document.querySelector('div#saida')
-
-
-            if (pais == 'Brasil'){
-                saida.innerHTML = `Você é Brasileiro`
-            }
-            saida.innerHTML = 'Você é gringo'
-
             
+            saida.innerHTML = `O País e em que você nasceu é ${pais}.`
+
+            if (pais == 'Brasil' || pais == 'brasil'){
+                saida.innerHTML += 'Você é brasileiro'
+            }else if (pais == 'EUA' || pais == 'Estados Unidos'){
+                saida.innerHTML += 'Você é estadunidense'
+            }else {
+                saida.innerHTML += 'Você é gringo'
+            }
         }
-        </script>
+    </script>
 </body>
 </html>
