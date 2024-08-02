@@ -63,6 +63,16 @@ form > input#botao:hover {
 div#saida{
     text-align: center;
 }
+img#foto{
+    display: block;
+
+    margin: 10px auto;
+    text-align: center;
+    width: 220px;
+    height: 180px;
+
+    border-radius: 50%;
+}
 footer > p{
     text-align: center;
     margin-top: 20px;

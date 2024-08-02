@@ -28,31 +28,36 @@ function resultado(){
             var genero = 'Homem'
             if (idade >=0 && idade <= 15){
                 //Criança
-                foto.src = 'kid-man'
+                img.setAttribute('src', 'kid-man.jpg')
             }else if(idade > 15 && idade <=30){
                 //Jovem
-
+                img.setAttribute('src', 'young-man.jpg')
             }else if(idade > 30 && idade <= 60){
                 //Senhor de meia idade
+                img.setAttribute('src', 'man.jpg')
             }else{
                 //idoso
+                img.setAttribute('src', 'old-man.jpg')
             }
 
         }else if(radsex[1].checked){
             var genero = 'Mulher'
             if (idade >=0 && idade <= 15){
                 //Criança
-                foto.src = 'kid-man'
+                img.setAttribute('src', 'kid-girl.jpg')
             }else if(idade > 15 && idade <=30){
                 //Jovem
-
+                img.setAttribute('src', 'young-woman.jpg')
             }else if(idade > 30 && idade <= 60){
-                //Senhor de meia idade
+                //Senhora de meia idade
+                img.setAttribute('src', 'woman.jpg')
             }else{
-                //idoso
+                //idosa
+                img.setAttribute('src', 'old-woman.jpg')
             }
         }
 
-        saida.innerHTML = `Você tem ${idade} e é ${genero}`
+        saida.innerHTML = `Você é ${genero} e tem ${idade}`
+        saida.appendChild(img)
     }
 }
