@@ -7,22 +7,31 @@
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-    <h1>Título</h1>
-    <section>
-        <form action="" method="post">
-            <label for="nasc">Ano de Nascimento</label>
-            <input type="number" name="nasc" id="nasc" placeholder="Ex:2003">
-            <br>
-            <label for="genero">Sexo:</label>
-            <input type="radio" name="genero" id="masculino">
-            <label for="masculino">Masculino</label>
-            <input type="radio" name="genero" id="feminino">
-            <label for="feminino">Feminino</label>
-            <br>
-            <input type="button" value="Enviar" id="botao">
-        </form>
-        <div id="saida"></div>
-    </section>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <main>
+        <section>
+            <form action="" method="post">
+                <label for="nasc">Ano de Nascimento:</label>
+                <input type="number" name="nasc" id="nasc" placeholder="Ex:2003">
+                <br>
+                <label for="genero">Sexo:</label>
+                <input type="radio" name="genero" id="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="genero" id="feminino">
+                <label for="feminino">Feminino</label>
+                <br>
+                <input type="button" value="Enviar" id="botao" onclick="resultado()">
+            </form>
+            <div id="saida">
+                <p>Preencha os dados acima para ver os resultados!</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><a href="https://github.com/PuFh">&copy;PuFh</a></p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
